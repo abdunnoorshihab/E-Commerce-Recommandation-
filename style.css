@@ -10,12 +10,9 @@
     max-width: 80%;
     display: flex;
     flex-wrap: wrap;
-    /* flex-wrap: nowrap; */
-    /* background: red; */
-    border: 1px solid gold;
+    
     padding: 20px;
     gap: 20px;
-    border: 3px solid skyblue;
     justify-content: center;
     align-items: center;
 }
@@ -23,34 +20,63 @@
 .card{
     border: 1px solid black;
     width: 250px;
-    background: white;
-    height: 250px;
+    height: 500px;
     background: aliceblue;
-
+    box-shadow: 5px solid gray;
+    align-items: center;
     position: relative;
 }
 
 .card img{
     width: 100%;
     height: 60%;
-    /* object-fit: contain; */
-    /* object-fit: contain; */
     object-fit: cover;
-    /* object-fit: fill; */
-    /* height: 50vh; */
     border: 2px skyblue;
+    transition: all .50s;
+}
+.card img:hover {
+    transform: scale(0.9);
 }
 
- .card-footer{
-    /*border: 2px solid skyblue;*/
+.card-header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 150px;
     width: 100%;
 
     position: absolute;
-    /* bottom: 0; */
-    bottom: 0;
+    top: 0%;
+    
+
+}
+.i-con {
+    position: absolute;
+    top: 0%;
+    font-size: 20px;
+    left: 15%;
+    font-weight: 500;
+    background-color: red;
+    
+}
+
+.checked {
+    color: orange;
+}
+.dis {
+    color: rgb(160, 255, 19);
+}
+.add {
+    position: relative;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: rgb(100, 192, 100);
+    padding: 10px 100px;
+    border-radius: 5px;
+    bottom: 10px;
+}
+.add:hover{
+    transform: scale(1.1);
+
 }
 
 
